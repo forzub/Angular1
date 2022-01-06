@@ -1,8 +1,14 @@
-let Name = "Левое имя";
-(typeof(Name) == 'string') ? console.log('Привет, ' + Name) : console.log('Ошибка, не тот тип данных');
+let Name = "Василий";
+(typeof(Name) === 'string') ? console.log('Привет, ' + Name) : console.log('Ошибка, не тот тип данных');
 
 Name = 123;
-(typeof(Name) == 'string') ? console.log('Привет, ' + Name) : console.log('Ошибка, не тот тип данных');
+let result = '';
+
+(typeof(Name) === 'string') ? result = `Привет, ${Name}`: result ='Ошибка, не тот тип данных';
+
+console.log(result);
+
+
 
 console.log(typeof(123)); // number
 console.log(typeof(NaN) ); // number
